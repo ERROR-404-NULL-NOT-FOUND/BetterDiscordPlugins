@@ -65,6 +65,7 @@ module.exports = class MessageLoggerV2 {
       }
     };
     this.pluginDir = (BdApi.Plugins && BdApi.Plugins.folder) || window.ContentManager.pluginsFolder;
+    console.log(this.pluginDir);
     this.__isPowerCord = !!window.powercord && typeof BdApi.__getPluginConfigPath === 'function' || typeof global.isTab !== 'undefined';
     let XenoLibOutdated = false;
     let ZeresPluginLibraryOutdated = false;
